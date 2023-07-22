@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>register</title>
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			outline: none;
+			border: none;
+			text-decoration: none;
+		}
+		html{
+			scroll-behavior: smooth;
+			scroll-padding-top: 4.3rem;
+			overflow-x: hidden;
+		}
+		header{
+			position: fixed;
+			top: 0; right: 0; left: 0;
+			background: #1E90FF;
+			padding: 0.3rem 7%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		header .logo{
+			color: white;
+		}
+		header .logo p{
+			font-size: 0.8rem;
+		}
+		header .logo h4{
+			font-size: 1.5rem;
+		}
+		header .logo h5{
+			letter-spacing: 0.4rem;
+			font-size: 0.6rem;
+		}
+		header .navbar a{
+			font-size: 1rem;
+			padding: 0 1.5rem;
+			color: white;
+		}
+		header .navbar a:hover{
+			color: blue;
+			background-color: white;
+			padding: 0.5rem 2rem;
+			border-radius: 1rem;
+		}
+		
+		.bg{
+			background: url(bgg.jpg) no-repeat;
+			background-size: cover;
+			background-position: center;
+			min-height: 10vh;
+			padding-top: 15rem;
+			line-height: 2rem;
+
+		}
+		.registrasi{
+			padding-right: 13rem;
+			padding-left: 13rem;
+			margin-top: -7rem;
+			margin-bottom: 3rem;
+		}
+		.registrasi h1{
+			text-align: center;
+			font-size: 3rem;
+			margin-bottom: 1rem;
+			color: white;
+		}
+		.registrasi .row{
+			display: flex;
+			flex-wrap: wrap-reverse;
+			gap: 2.5rem;
+			align-items: center;
+		}
+		.registrasi .row form{
+			flex: 1 1 40rem;
+			padding:2rem 2.5rem;
+			box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+			border:.1rem solid rgba(0, 0, 0, .1);
+			background: #fff;
+			border-radius: .5rem;
+		}
+
+		.registrasi .row form .box{
+			padding: 0.5rem;
+			font-size: 1rem;
+			background-color: #F8F8FF;
+			text-transform: none;
+			border: .2rem;
+			border-radius: .5rem;
+			margin: 0.8rem 0;
+			width: 100%;
+		}
+		.registrasi .row form .gambar{
+			width: 10rem;
+			height: 10rem;
+			background-color: #F8F8FF;
+		}
+		.registrasi .row form .upload .list{
+			float: right;
+			margin-top: -7rem;
+			margin-right: 24rem;
+		}
+		.registrasi .row form .gambar img{
+			padding: 4rem;
+			width: 10rem;
+			height: 10rem;
+		}
+		.registrasi .row form .gambar p{
+			margin-top: -2rem;
+			text-align: center;
+		}
+		.registrasi .row form p{
+			font-size: 0.8rem;
+			color: grey;
+			margin-top: -0.5rem;
+		}
+		.registrasi .row form .cb{
+			margin-top: 1rem;
+		}
+		.registrasi .row form .bt{
+			display: inline-block;
+			border-radius: 0.2rem;
+			background: #1E90FF;
+			padding: 0.5rem 3rem;
+			font-size: 1rem;
+			color: white;
+			margin-left: 23rem;
+			margin-top: 2rem;
+		}
+
+		footer{
+			background-color: #4169E1;
+		}
+		footer .isi{
+			color: white;
+			padding: 2rem 3rem;
+		}
+		footer .isi .logo p{
+			font-size: 0.8rem;
+		}
+		footer .isi .logo h4{
+			font-size: 1.5rem;
+		}
+		footer .isi .logo h5{
+			letter-spacing: 0.4rem;
+			font-size: 0.6rem;
+		}
+		footer .isi p{
+			padding-right: 40%;
+			padding-top: 0.5rem;
+		}
+		footer .isi .gambar{
+			margin-top: -1rem;
+		}
+		footer .isi .gambar img{
+			height: 1rem;
+			width: 1rem;
+			float: right;
+			margin-left: 1rem;
+		}
+		footer .isi .cr{
+			font-size: 0.7rem;
+			margin-top: 2rem;
+		}
+		
+	</style>
+</head>
+<body>
+
+	<header>
+
+		<a href="#" class="logo">
+			<p>detikfinance</p>
+			<h4>BUSINESS PLAN</h4>
+			<h5>COMPETITION 2023</h5>
+		</a>
+
+		<nav class="navbar">
+			<a href="index.html">About</a>
+			<a href="index.html">Mechanism</a>
+			<a href="index.html">Latest Update</a>
+			<a href="#">Register</a>
+		</nav>
+
+	</header>
+
+	<div class="bg"></div>
+	
+	<div class="registrasi">
+		<h1>Registrasi</h1>
+		<div class="row">
+			<form action="">
+				<input type="text" placeholder="Nama Perusahaan" class="box">
+				<input type="email" placeholder="Email" class="box">
+				<input type="number" placeholder="Nomor Telepon" class="box"><p>isi hanya angka</p>
+				<textarea name="" class="box" placeholder="Tentang Perusahaan (Max. 200 character)" id="" cols="20" rows="7"></textarea>
+				<div class="gambar">
+					<img src="plus.png">
+					<p>Upload file logo</p>
+				</div>
+				<div class="upload">
+					<ol class="list">
+						<li>Format file: .png .jpg .jpeg </li>
+						<li>Maksimal ukuran file 200KB </li>
+						<li>Hindari penggunaan logo berwarna putih</li>
+						<li>Minimal lebar 300px</li>
+					</ol>
+				</div>
+				<input type="file" class="box"><p>Upload logo perushaan</p>
+				<input type="text" placeholder="Link Website" class="box"><p>website, sosial media</p>
+				<input type="checkbox" class="cb"> Dengan menekan tombol daftar</br>
+				<a href="register.html" class="bt">Register</a>
+			</form>
+		</div>
+	</div>
+
+	<footer>
+		<div class="isi">
+			<div class="logo">
+				<p>detikfinance</p>
+				<h4>BUSINESS PLAN</h4>
+				<h5>COMPETITION 2023</h5>
+			</div>
+			<p>Detikfinance memberikan ruang kepada para startup di indonesia untuk menunjukkan serta mempromosikan brand mereka untuk mendapatkan perhatian dari venture capital dan angel investor</p>
+			<div class="gambar">
+				<img src="tw.png">
+				<img src="wa.png">
+				<img src="fb.png">
+			</div>
+			<hr>
+			<div class="cr">
+				<p>2023 Detikcom.All rights reserved</p>
+			</div>
+
+		</div>
+
+	</footer>
+
+</body>
+</html>
